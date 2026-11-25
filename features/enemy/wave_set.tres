@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="WaveSet" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://features/enemy/wave_set.gd" id="1_wave_set"]
+
+[resource]
+script = ExtResource("1_wave_set")
+first_minute_rate = 20.0
+additional_per_minute = 5.0
+boss_time_seconds = 300.0
+maximum_enemies = 250
+spawn_radius = 300.0
+boss_health = 1250.0
+boss_move_speed = 52.0
+boss_separation_radius = 74.0
+boss_xp_reward = 250
+boss_contact_damage = 22.0

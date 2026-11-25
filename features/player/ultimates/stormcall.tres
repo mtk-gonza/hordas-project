@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="UltimateDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://features/player/ultimate_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+ability_id = &"stormcall"
+display_name = "Llamado de la Tormenta"
+damage = 135.0
+radius = 460.0
+cooldown = 62.0
+effect_duration = 1.6
+effect_color = Color(0.36, 0.84, 1, 1)
+

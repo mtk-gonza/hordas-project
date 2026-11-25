@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://features/weapons/circular_pulse.gd" id="1_pulse"]
+
+[sub_resource type="CircleShape2D" id="CircleShape_pulse"]
+radius = 118.0
+
+[node name="CircularPulse" type="Area2D"]
+collision_layer = 0
+collision_mask = 2
+monitorable = false
+script = ExtResource("1_pulse")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape_pulse")

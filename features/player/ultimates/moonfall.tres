@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="UltimateDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://features/player/ultimate_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+ability_id = &"moonfall"
+display_name = "Caída Lunar"
+damage = 240.0
+radius = 260.0
+cooldown = 68.0
+effect_duration = 1.0
+effect_color = Color(0.82, 0.64, 1, 1)
+

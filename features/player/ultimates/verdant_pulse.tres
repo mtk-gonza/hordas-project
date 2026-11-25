@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="UltimateDefinition" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://features/player/ultimate_definition.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+ability_id = &"verdant_pulse"
+display_name = "Pulso de la Arboleda"
+damage = 105.0
+radius = 390.0
+cooldown = 48.0
+effect_duration = 1.8
+effect_color = Color(0.34, 0.94, 0.55, 1)
+

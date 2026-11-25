@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://features/session/game_world.gd" id="1_world"]
+[ext_resource type="Script" path="res://features/enemy/enemy_spawner.gd" id="2_enemy_spawner"]
+[ext_resource type="Script" path="res://features/ui/hud.gd" id="3_hud"]
+[ext_resource type="Script" path="res://features/objectives/objective_manager.gd" id="4_objectives"]
+
+[node name="GameWorld" type="Node2D"]
+script = ExtResource("1_world")
+
+[node name="Actors" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="PlayerSpawner" type="MultiplayerSpawner" parent="."]
+spawn_path = NodePath("../Actors")
+
+[node name="EnemySpawner" type="Node" parent="."]
+script = ExtResource("2_enemy_spawner")
+
+[node name="ObjectiveManager" type="Node" parent="."]
+script = ExtResource("4_objectives")
+
+[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="EnemySpawner"]
+spawn_path = NodePath("../../Actors")
+spawn_limit = 250
+
+[node name="ChestSpawner" type="MultiplayerSpawner" parent="ObjectiveManager"]
+spawn_limit = 16
+
+[node name="AccessCardSpawner" type="MultiplayerSpawner" parent="ObjectiveManager"]
+spawn_limit = 16
+
+[node name="HUD" type="CanvasLayer" parent="."]
+script = ExtResource("3_hud")

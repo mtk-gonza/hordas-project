@@ -1,0 +1,17 @@
+.godot/
+.import/
+export.cfg
+*.tmp
+builds/
+.validation/
+.codebase-memory/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3
+*.db
+*.log
+.env
+.env.*
+.DS_Store
+Thumbs.db
